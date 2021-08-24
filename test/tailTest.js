@@ -1,10 +1,28 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-// Test Case 1: Check the returned array elements
+describe("tail", () => {
+  it("returns 3 ensuring that the length of words isn't altered", () => {
+    const newArray = ["hello", "Lighthouse", "Labs"];
+    tail(result);
+    assert.strictEqual(result.length, 3);
+  });
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs" 
+  it('returns 2 when we pass["Hello", "Lighthouse", "Labs"] into tail and look at the length', () => {
+    const words = ["Hello", "Lighthouse", "Labs"];
+    const result = tail(words);
+    assert.strictEqual(result.length, 2);
+  });
 
+  it('returns "Lighthouse" when we pass["Hello", "Lighthouse", "Labs"] into tail and look at the first element in the returned array', () => {
+    const words = ["Hello", "Lighthouse", "Labs"];
+    const result = tail(words);
+    assert.strictEqual(result[0], "Lighthouse");
+  });
+
+  it('returns "Labs" when we pass["Hello", "Lighthouse", "Labs"] into tail and look at the second element in the returned array', () => {
+    const words = ["Hello", "Lighthouse", "Labs"];
+    const result = tail(words);
+    assert.strictEqual(result[1], "Labs");
+  });
+});
