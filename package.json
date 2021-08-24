@@ -1,6 +1,6 @@
 {
   "name": "@soma/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "main.js",
   "directories": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sam-Fay/lotide-.git"
+    "url": "git+https://github.com/Sam-Fay/lotide.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sam-Fay/lotide-/issues"
+    "url": "https://github.com/Sam-Fay/lotide/issues"
   },
-  "homepage": "https://github.com/Sam-Fay/lotide-#readme",
+  "homepage": "https://github.com/Sam-Fay/lotide#readme",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.0"
